@@ -1,0 +1,17 @@
+C:\Users\Akmal\RiderProjects\ECommerceSample\Database\bin\Debug\net8.0\Database.deps.json
+C:\Users\Akmal\RiderProjects\ECommerceSample\Database\bin\Debug\net8.0\Database.runtimeconfig.json
+C:\Users\Akmal\RiderProjects\ECommerceSample\Database\bin\Debug\net8.0\Database.dll
+C:\Users\Akmal\RiderProjects\ECommerceSample\Database\bin\Debug\net8.0\Database.pdb
+C:\Users\Akmal\RiderProjects\ECommerceSample\Database\bin\Debug\net8.0\Domain.dll
+C:\Users\Akmal\RiderProjects\ECommerceSample\Database\bin\Debug\net8.0\Domain.pdb
+C:\Users\Akmal\RiderProjects\ECommerceSample\Database\obj\Debug\net8.0\Database.csproj.AssemblyReference.cache
+C:\Users\Akmal\RiderProjects\ECommerceSample\Database\obj\Debug\net8.0\Database.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Akmal\RiderProjects\ECommerceSample\Database\obj\Debug\net8.0\Database.AssemblyInfoInputs.cache
+C:\Users\Akmal\RiderProjects\ECommerceSample\Database\obj\Debug\net8.0\Database.AssemblyInfo.cs
+C:\Users\Akmal\RiderProjects\ECommerceSample\Database\obj\Debug\net8.0\Database.csproj.CoreCompileInputs.cache
+C:\Users\Akmal\RiderProjects\ECommerceSample\Database\obj\Debug\net8.0\Database.csproj.CopyComplete
+C:\Users\Akmal\RiderProjects\ECommerceSample\Database\obj\Debug\net8.0\Database.dll
+C:\Users\Akmal\RiderProjects\ECommerceSample\Database\obj\Debug\net8.0\refint\Database.dll
+C:\Users\Akmal\RiderProjects\ECommerceSample\Database\obj\Debug\net8.0\Database.pdb
+C:\Users\Akmal\RiderProjects\ECommerceSample\Database\obj\Debug\net8.0\Database.genruntimeconfig.cache
+C:\Users\Akmal\RiderProjects\ECommerceSample\Database\obj\Debug\net8.0\ref\Database.dll
