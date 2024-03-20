@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "6ZROJyvIepiTHrlOMmanThz7L5cZCR+iJ30K51x2qEaFQ3wKfFBQrbDzs63ghM9LOTsrz5b1T/9MI+KsD+Eocw==",
+  "dgSpecHash": "d5FMAsNPFOwyOayp3yO+DoRD6K6gU5M7vKzzde7KvQvvmf1aRg/Ex9gfC9FDuq+j/RPq4hsjWqlHbbfjf104UQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Akmal\\RiderProjects\\ECommerceSample\\Application\\Application.csproj",
+  "projectFilePath": "C:\\Users\\Asus\\RiderProjects\\ECommerceSample\\Application\\Application.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Akmal\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.1\\microsoft.extensions.dependencyinjection.abstractions.8.0.1.nupkg.sha512"
+    "C:\\Users\\Asus\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.1\\microsoft.extensions.dependencyinjection.abstractions.8.0.1.nupkg.sha512"
   ],
   "logs": []
 }

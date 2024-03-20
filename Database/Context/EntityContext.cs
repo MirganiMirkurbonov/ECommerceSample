@@ -7,10 +7,6 @@ namespace Database.Context;
 
 public partial class EntityContext : DbContext
 {
-    public EntityContext()
-    {
-        
-    }
     private readonly string _connectionString;
     public EntityContext(IOptions<DatabaseOptions> options)
     {

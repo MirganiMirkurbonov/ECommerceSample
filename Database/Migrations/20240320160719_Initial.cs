@@ -58,14 +58,12 @@ namespace Database.Migrations
             migrationBuilder.CreateIndex(
                 name: "IX_user_email",
                 table: "user",
-                column: "email",
-                filter: "[email] IS NOT NULL");
+                column: "email");
 
             migrationBuilder.CreateIndex(
                 name: "IX_user_phone_number",
                 table: "user",
-                column: "phone_number",
-                filter: "[email] IS NOT NULL");
+                column: "phone_number");
 
             migrationBuilder.CreateIndex(
                 name: "IX_user_file_keyword_id",

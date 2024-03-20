@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Akmal\\RiderProjects\\ECommerceSample\\API\\API.csproj": {}
+    "C:\\Users\\Asus\\RiderProjects\\ECommerceSample\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Akmal\\RiderProjects\\ECommerceSample\\API\\API.csproj": {
+    "C:\\Users\\Asus\\RiderProjects\\ECommerceSample\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Akmal\\RiderProjects\\ECommerceSample\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\Asus\\RiderProjects\\ECommerceSample\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\Akmal\\RiderProjects\\ECommerceSample\\API\\API.csproj",
-        "packagesPath": "C:\\Users\\Akmal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Akmal\\RiderProjects\\ECommerceSample\\API\\obj\\",
+        "projectPath": "C:\\Users\\Asus\\RiderProjects\\ECommerceSample\\API\\API.csproj",
+        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Asus\\RiderProjects\\ECommerceSample\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Akmal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,11 +28,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Akmal\\RiderProjects\\ECommerceSample\\Database\\Database.csproj": {
-                "projectPath": "C:\\Users\\Akmal\\RiderProjects\\ECommerceSample\\Database\\Database.csproj"
+              "C:\\Users\\Asus\\RiderProjects\\ECommerceSample\\Database\\Database.csproj": {
+                "projectPath": "C:\\Users\\Asus\\RiderProjects\\ECommerceSample\\Database\\Database.csproj"
               },
-              "C:\\Users\\Akmal\\RiderProjects\\ECommerceSample\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Akmal\\RiderProjects\\ECommerceSample\\Domain\\Domain.csproj"
+              "C:\\Users\\Asus\\RiderProjects\\ECommerceSample\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Asus\\RiderProjects\\ECommerceSample\\Domain\\Domain.csproj"
               }
             }
           }
@@ -50,6 +50,22 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.3, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -79,17 +95,17 @@
         }
       }
     },
-    "C:\\Users\\Akmal\\RiderProjects\\ECommerceSample\\Database\\Database.csproj": {
+    "C:\\Users\\Asus\\RiderProjects\\ECommerceSample\\Database\\Database.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Akmal\\RiderProjects\\ECommerceSample\\Database\\Database.csproj",
+        "projectUniqueName": "C:\\Users\\Asus\\RiderProjects\\ECommerceSample\\Database\\Database.csproj",
         "projectName": "Database",
-        "projectPath": "C:\\Users\\Akmal\\RiderProjects\\ECommerceSample\\Database\\Database.csproj",
-        "packagesPath": "C:\\Users\\Akmal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Akmal\\RiderProjects\\ECommerceSample\\Database\\obj\\",
+        "projectPath": "C:\\Users\\Asus\\RiderProjects\\ECommerceSample\\Database\\Database.csproj",
+        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Asus\\RiderProjects\\ECommerceSample\\Database\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Akmal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -103,8 +119,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Akmal\\RiderProjects\\ECommerceSample\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Akmal\\RiderProjects\\ECommerceSample\\Domain\\Domain.csproj"
+              "C:\\Users\\Asus\\RiderProjects\\ECommerceSample\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Asus\\RiderProjects\\ECommerceSample\\Domain\\Domain.csproj"
               }
             }
           }
@@ -168,17 +184,17 @@
         }
       }
     },
-    "C:\\Users\\Akmal\\RiderProjects\\ECommerceSample\\Domain\\Domain.csproj": {
+    "C:\\Users\\Asus\\RiderProjects\\ECommerceSample\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Akmal\\RiderProjects\\ECommerceSample\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Asus\\RiderProjects\\ECommerceSample\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\Akmal\\RiderProjects\\ECommerceSample\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\Akmal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Akmal\\RiderProjects\\ECommerceSample\\Domain\\obj\\",
+        "projectPath": "C:\\Users\\Asus\\RiderProjects\\ECommerceSample\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Asus\\RiderProjects\\ECommerceSample\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Akmal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

@@ -1,9 +1,6 @@
 ﻿namespace Domain.Options;
 
-public record DatabaseOptions(
-    string ConnectionString)
+public class DatabaseOptions
 {
-    public DatabaseOptions() : this(String.Empty)
-    {
-    }
-};
+    public string ConnectionString { get; set; }
+}
