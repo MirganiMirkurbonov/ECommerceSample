@@ -1,5 +1,5 @@
 ﻿using System.Linq.Expressions;
-using Database.Tables;
+using Database.Context.Tables;
 
 namespace Database.Interfaces;
 

@@ -1,8 +1,8 @@
-﻿using Database.Tables;
+﻿using Database.Context.Tables;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Database.Configurations;
+namespace Database.Context.Configurations;
 
 public class UserConfiguration : IEntityTypeConfiguration<User>
 {

@@ -1,6 +1,6 @@
 ﻿using System.Linq.Expressions;
+using Database.Context.Tables;
 using Database.Interfaces;
-using Database.Tables;
 using Microsoft.EntityFrameworkCore;
 
 namespace Database.Repositories;

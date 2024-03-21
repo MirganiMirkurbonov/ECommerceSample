@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Database.Tables;
+namespace Database.Context.Tables;
 
 [Table("user")]
 public class User : Entity

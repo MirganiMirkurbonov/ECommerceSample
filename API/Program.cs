@@ -1,9 +1,12 @@
+using API.Extensions;
 using Database.Extensions;
+using Domain.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services
-    .AddDatabase(builder.Configuration);
+    .AddDatabase(builder.Configuration)
+    .AddDomain(builder.Configuration);
 
 builder.Configuration
     .SetBasePath(Directory.GetCurrentDirectory())
@@ -13,7 +16,7 @@ builder.Configuration
     .AddEnvironmentVariables(); 
 
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerConfigurations(builder.Configuration);
 
 var app = builder.Build();
 

@@ -1,4 +1,4 @@
-﻿using Database.Tables;
+﻿using Database.Context.Tables;
 using Microsoft.EntityFrameworkCore;
 
 namespace Database.Context;
