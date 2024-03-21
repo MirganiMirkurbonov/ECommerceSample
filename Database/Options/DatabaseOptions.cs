@@ -1,4 +1,4 @@
-﻿namespace Domain.Options;
+﻿namespace Database.Options;
 
 public class DatabaseOptions
 {

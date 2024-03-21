@@ -1,11 +1,9 @@
 using Database.Extensions;
-using Domain.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services
-    .AddDomain(builder.Configuration)
-    .AddDatabase();
+    .AddDatabase(builder.Configuration);
 
 builder.Configuration
     .SetBasePath(Directory.GetCurrentDirectory())

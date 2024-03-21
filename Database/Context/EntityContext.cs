@@ -1,5 +1,5 @@
 ﻿using System.Reflection;
-using Domain.Options;
+using Database.Options;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 

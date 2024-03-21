@@ -28,9 +28,10 @@ public class GenericRepository<T>(DbContext dbContext) : IGenericRepository<T>
         dbContext.SaveChanges();
     }
 
-    public void Delete(T entity)
+    public void Delete(T entity, CancellationToken cancellationToken)
     {
         _entity.Remove(entity);
+        dbContext.SaveChangesAsync(cancellationToken);
     }
 
     public async ValueTask<bool> Exists(Expression<Func<T, bool>> expression, CancellationToken cancellationToken)
@@ -63,5 +64,5 @@ public class GenericRepository<T>(DbContext dbContext) : IGenericRepository<T>
     public async Task SaveAsync(CancellationToken cancellationToken)
     {
         await dbContext.SaveChangesAsync(cancellationToken);
-    } 
+    }
 }
