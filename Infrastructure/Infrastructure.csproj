@@ -12,7 +12,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="AWSManager\" />
+      <Folder Include="AWSServices\" />
     </ItemGroup>
 
     <ItemGroup>
