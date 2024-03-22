@@ -17,8 +17,8 @@ public static class SwaggerExtensions
             swagger.SwaggerDoc("v1", new OpenApiInfo
             {
                 Version = "v1",
-                Title = "JWT Token Authentication API",
-                Description = "ASP.NET Core 5.0 Web API"
+                Title = "Simple Cloud APP API",
+                Description = "ASP.NET Core 8.0 Web API"
             });
             swagger.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme()
             {
@@ -28,7 +28,7 @@ public static class SwaggerExtensions
                 BearerFormat = "JWT",
                 In = ParameterLocation.Header,
                 Description =
-                    "JWT Authorization header using the Bearer scheme. \r\n\r\n Enter 'Bearer' [space] and then your token in the text input below.\r\n\r\nExample: \"Bearer 12345abcdef\"",
+                    "JWT Authorization header using the Bearer scheme. \r\n\r\n Enter 'Bearer' [space] and then your token in the text input below.\r\n\r\nExample: \"Bearer ejssyur...\"",
             });
             swagger.AddSecurityRequirement(new OpenApiSecurityRequirement
             {

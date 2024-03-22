@@ -36,9 +36,10 @@ namespace Database.Migrations
                 {
                     id = table.Column<Guid>(type: "uuid", nullable: false),
                     name = table.Column<string>(type: "text", nullable: false),
-                    path = table.Column<string>(type: "text", nullable: false),
-                    size = table.Column<int>(type: "integer", nullable: false),
-                    description = table.Column<string>(type: "text", nullable: false),
+                    path = table.Column<string>(type: "text", nullable: true),
+                    extension = table.Column<string>(type: "text", nullable: true),
+                    size = table.Column<long>(type: "bigint", nullable: false),
+                    description = table.Column<string>(type: "text", nullable: true),
                     user_id = table.Column<Guid>(type: "uuid", nullable: false),
                     user = table.Column<Guid>(type: "uuid", nullable: false),
                     created_at = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),

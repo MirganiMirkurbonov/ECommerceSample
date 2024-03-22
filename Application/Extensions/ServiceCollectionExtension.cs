@@ -1,6 +1,6 @@
 ﻿using Application.Interfaces;
 using Application.Mappers;
-using Application.Repositories;
+using Application.Services;
 using Mapster;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -13,7 +13,8 @@ public static class ServiceCollectionExtension
         MapsterConfiguration.Scan(config);
         
         services
-            .AddScoped<IAuthService, AuthService>();
+            .AddScoped<IAuthService, AuthService>()
+            .AddScoped<ICloudService, CloudService>();
         
         return services;
     }

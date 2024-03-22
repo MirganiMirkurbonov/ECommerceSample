@@ -3,16 +3,14 @@ using Application.Interfaces;
 using Database.Context.Tables;
 using Database.Interfaces;
 using Domain.Enumerators;
-using Domain.Extensions;
 using Domain.Helpers;
 using Domain.Models.API.Auth;
 using Domain.Models.Common;
 using Domain.Models.Infrastructure.Jwt;
 using Infrastructure.Interfaces;
 using Mapster;
-using Microsoft.EntityFrameworkCore;
 
-namespace Application.Repositories;
+namespace Application.Services;
 
 internal class AuthService(
     IGenericRepository<User> _userRepository,
@@ -36,7 +34,7 @@ internal class AuthService(
         request.FirstName = request.FirstName.Trim();
         request.Username = request.Username.Trim().ToLower();
 
-        /*var isUsernameUnique = await _userRepository.IsUnique(x => x.Username == request.Username, cancellationToken);
+        var isUsernameUnique = await _userRepository.IsUnique(x => x.Username == request.Username, cancellationToken);
         if (isUsernameUnique == false)
             return new ErrorResponse(HttpStatusCode.BadRequest, EResponseCode.UsernameAlreadyExists);
 
@@ -45,11 +43,11 @@ internal class AuthService(
                 cancellationToken);
         if (isEmailUnique == false)
             return new ErrorResponse(HttpStatusCode.BadRequest, EResponseCode.InvalidEmailOrPhone);
-        */
+        
         var user = request.Adapt<User>();
         
         var newUser = await _userRepository.Insert(user, cancellationToken);
-        var userToken = _tokenService.GenerateToken(user.Adapt<GenerateTokenParams>());
+        var userToken = _tokenService.GenerateToken(newUser.Adapt<GenerateTokenParams>());
         return userToken.Adapt<AuthorizedResponse>();
     }
 }

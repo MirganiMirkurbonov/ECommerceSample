@@ -9,17 +9,20 @@ public class UserFile : Entity
     public string Name { get; set; }
     
     [Column("path")]
-    public string Path { get; set; }
+    public string? Path { get; set; }
+
+    [Column("extension")]
+    public string? Extension { get; set; }
     
     [Column("size")]
-    public int Size { get; set; }
+    public long Size { get; set; }
     
     [Column("description")]
-    public string Description { get; set; }
+    public string? Description { get; set; }
     
     [Column("user_id")]
     public Guid UserId { get; set; }
     
-    [ForeignKey("user")]
+    [ForeignKey(nameof(UserId))]
     public virtual User User { get; set; }
 }

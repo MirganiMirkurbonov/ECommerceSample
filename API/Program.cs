@@ -43,9 +43,10 @@ if (app.Environment.IsDevelopment())
 if (app.Services.GetService<IHttpContextAccessor>() != null)
     HttpContextHelper.Accessor = app.Services.GetRequiredService<IHttpContextAccessor>();
 
+
 app.UseHttpsRedirection();
 app.UseRouting();
-
+app.UseAuthorization();
 app.UseEndpoints(endpoints => endpoints.MapControllers()); 
 
 app.Run();

@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "Dwqe0D+uVzqcpRP/vgmUbdikJ/SX/aXzE7G25SU/chucSZr9g4E/bRGeiAkzLpccG5vwkUVq0g8tzzieoD3gEQ==",
+  "dgSpecHash": "+ejN1K+aGysYLeS1U4FNukXc//bu2R6ARqmYhFsY84db+2p7VxgkXcrgtEk8DUa+L963u3jwOf3R7JXc1ZzyFg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Asus\\RiderProjects\\ECommerceSample\\Application\\Application.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Asus\\.nuget\\packages\\awssdk.core\\3.7.302.20\\awssdk.core.3.7.302.20.nupkg.sha512",
+    "C:\\Users\\Asus\\.nuget\\packages\\awssdk.s3\\3.7.307\\awssdk.s3.3.7.307.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\mapster\\7.4.0\\mapster.7.4.0.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\mapster.core\\1.2.1\\mapster.core.1.2.1.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",

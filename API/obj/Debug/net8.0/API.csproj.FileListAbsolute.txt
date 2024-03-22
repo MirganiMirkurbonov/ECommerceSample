@@ -125,3 +125,5 @@ C:\Users\Asus\RiderProjects\ECommerceSample\API\bin\Debug\net8.0\Mapster.dll
 C:\Users\Asus\RiderProjects\ECommerceSample\API\bin\Debug\net8.0\Mapster.Core.dll
 C:\Users\Asus\RiderProjects\ECommerceSample\API\bin\Debug\net8.0\Infrastructure.dll
 C:\Users\Asus\RiderProjects\ECommerceSample\API\bin\Debug\net8.0\Infrastructure.pdb
+C:\Users\Asus\RiderProjects\ECommerceSample\API\bin\Debug\net8.0\AWSSDK.Core.dll
+C:\Users\Asus\RiderProjects\ECommerceSample\API\bin\Debug\net8.0\AWSSDK.S3.dll

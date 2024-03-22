@@ -12,7 +12,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Database.Migrations
 {
     [DbContext(typeof(EntityContext))]
-    [Migration("20240322082901_Initial")]
+    [Migration("20240322104551_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
@@ -91,9 +91,12 @@ namespace Database.Migrations
                         .HasColumnName("created_at");
 
                     b.Property<string>("Description")
-                        .IsRequired()
                         .HasColumnType("text")
                         .HasColumnName("description");
+
+                    b.Property<string>("Extension")
+                        .HasColumnType("text")
+                        .HasColumnName("extension");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -101,12 +104,11 @@ namespace Database.Migrations
                         .HasColumnName("name");
 
                     b.Property<string>("Path")
-                        .IsRequired()
                         .HasColumnType("text")
                         .HasColumnName("path");
 
-                    b.Property<int>("Size")
-                        .HasColumnType("integer")
+                    b.Property<long>("Size")
+                        .HasColumnType("bigint")
                         .HasColumnName("size");
 
                     b.Property<DateTime?>("UpdatedAt")

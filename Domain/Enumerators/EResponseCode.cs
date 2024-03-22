@@ -6,5 +6,7 @@ public enum EResponseCode
     InvalidRequest,
     InvalidEmailOrPhone,
     UserNotFound,
-    InvalidPassword
+    InvalidPassword,
+    FileNotFound,
+    InternalServerError
 }

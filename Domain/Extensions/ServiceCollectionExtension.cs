@@ -10,6 +10,9 @@ public static class ServiceCollectionExtension
     {
         services.AddOptions<JwtOptions>()
             .Bind(configuration.GetSection(nameof(JwtOptions)));
+        
+        services.AddOptions<AwsS3Options>()
+            .Bind(configuration.GetSection(nameof(AwsS3Options)));
         return services;
     }
 }

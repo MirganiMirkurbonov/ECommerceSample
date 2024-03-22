@@ -88,9 +88,12 @@ namespace Database.Migrations
                         .HasColumnName("created_at");
 
                     b.Property<string>("Description")
-                        .IsRequired()
                         .HasColumnType("text")
                         .HasColumnName("description");
+
+                    b.Property<string>("Extension")
+                        .HasColumnType("text")
+                        .HasColumnName("extension");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -98,12 +101,11 @@ namespace Database.Migrations
                         .HasColumnName("name");
 
                     b.Property<string>("Path")
-                        .IsRequired()
                         .HasColumnType("text")
                         .HasColumnName("path");
 
-                    b.Property<int>("Size")
-                        .HasColumnType("integer")
+                    b.Property<long>("Size")
+                        .HasColumnType("bigint")
                         .HasColumnName("size");
 
                     b.Property<DateTime?>("UpdatedAt")
@@ -114,12 +116,7 @@ namespace Database.Migrations
                         .HasColumnType("uuid")
                         .HasColumnName("user_id");
 
-                    b.Property<Guid>("user")
-                        .HasColumnType("uuid");
-
                     b.HasKey("Id");
-
-                    b.HasIndex("user");
 
                     b.HasIndex("UserId", "Name");
 
@@ -130,7 +127,7 @@ namespace Database.Migrations
                 {
                     b.HasOne("Database.Context.Tables.User", "User")
                         .WithMany()
-                        .HasForeignKey("user")
+                        .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
