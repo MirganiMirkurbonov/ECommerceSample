@@ -9,7 +9,7 @@ public class UserFileConfiguration : IEntityTypeConfiguration<UserFile>
     public void Configure(EntityTypeBuilder<UserFile> builder)
     {
         builder
-            .HasIndex(x => new { x.Keyword, x.Id })
-            .IsUnique();
+            .HasIndex(x => new { x.UserId, x.Name })
+            .IsUnique(false);
     }
 }

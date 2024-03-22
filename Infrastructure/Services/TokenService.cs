@@ -10,13 +10,13 @@ using Microsoft.IdentityModel.Tokens;
 
 namespace Infrastructure.Services;
 
-internal class JwtService(IOptions<JwtOptions> options, IDatetimeProvider datetime) : IJwtService
+internal class TokenService(IOptions<JwtOptions> _options, IDatetimeProvider _datetime) : ITokenService
 {
     public GenerateTokenResult GenerateToken(GenerateTokenParams tokenParams)
     {
-        var expireDate = datetime.UtcNow().AddMinutes(options.Value.ExpireMinutes);
+        var expireDate = _datetime.UtcNow().AddMinutes(_options.Value.ExpireMinutes);
         var tokenHandler = new JwtSecurityTokenHandler();
-        var key = Encoding.ASCII.GetBytes(options.Value.Key);
+        var key = Encoding.ASCII.GetBytes(_options.Value.Key);
         var tokenDescriptor = new SecurityTokenDescriptor
         {
             Subject = new ClaimsIdentity(new[]
@@ -27,8 +27,8 @@ internal class JwtService(IOptions<JwtOptions> options, IDatetimeProvider dateti
                 new Claim(ClaimTypes.Surname, tokenParams.LastName),
             }),
             Expires = expireDate,
-            Issuer = options.Value.Issuer,
-            Audience = options.Value.Audience,
+            Issuer = _options.Value.Issuer,
+            Audience = _options.Value.Audience,
             SigningCredentials =
                 new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
         };

@@ -13,5 +13,9 @@ public class UserConfiguration : IEntityTypeConfiguration<User>
 
         builder
             .HasIndex(x => x.PhoneNumber);
+
+        builder
+            .HasIndex(x => x.Username)
+            .IsUnique();
     }
 }

@@ -111,3 +111,17 @@ C:\Users\Asus\RiderProjects\ECommerceSample\API\obj\Debug\net8.0\refint\API.dll
 C:\Users\Asus\RiderProjects\ECommerceSample\API\obj\Debug\net8.0\API.pdb
 C:\Users\Asus\RiderProjects\ECommerceSample\API\obj\Debug\net8.0\API.genruntimeconfig.cache
 C:\Users\Asus\RiderProjects\ECommerceSample\API\obj\Debug\net8.0\ref\API.dll
+C:\Users\Asus\RiderProjects\ECommerceSample\API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Asus\RiderProjects\ECommerceSample\API\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Asus\RiderProjects\ECommerceSample\API\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Asus\RiderProjects\ECommerceSample\API\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Asus\RiderProjects\ECommerceSample\API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Asus\RiderProjects\ECommerceSample\API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Asus\RiderProjects\ECommerceSample\API\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Asus\RiderProjects\ECommerceSample\API\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Asus\RiderProjects\ECommerceSample\API\bin\Debug\net8.0\Application.dll
+C:\Users\Asus\RiderProjects\ECommerceSample\API\bin\Debug\net8.0\Application.pdb
+C:\Users\Asus\RiderProjects\ECommerceSample\API\bin\Debug\net8.0\Mapster.dll
+C:\Users\Asus\RiderProjects\ECommerceSample\API\bin\Debug\net8.0\Mapster.Core.dll
+C:\Users\Asus\RiderProjects\ECommerceSample\API\bin\Debug\net8.0\Infrastructure.dll
+C:\Users\Asus\RiderProjects\ECommerceSample\API\bin\Debug\net8.0\Infrastructure.pdb

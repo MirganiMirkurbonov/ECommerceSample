@@ -2,7 +2,7 @@
 
 namespace Infrastructure.Interfaces;
 
-public interface IJwtService
+public interface ITokenService
 {
     GenerateTokenResult GenerateToken(GenerateTokenParams tokenParams);
 }

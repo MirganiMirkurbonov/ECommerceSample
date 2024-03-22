@@ -1,11 +1,12 @@
 ﻿using System.Linq.Expressions;
+using Database.Context;
 using Database.Context.Tables;
 using Database.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 namespace Database.Repositories;
 
-public class GenericRepository<T>(DbContext dbContext) : IGenericRepository<T>
+public class GenericRepository<T>(EntityContext dbContext) : IGenericRepository<T>
     where T : Entity
 {
     private readonly DbSet<T> _entity = dbContext.Set<T>();
@@ -16,9 +17,15 @@ public class GenericRepository<T>(DbContext dbContext) : IGenericRepository<T>
         return result;
     }
 
+    public async Task<T?> GetBy(Expression<Func<T, bool>> expression, CancellationToken cancellationToken)
+    {
+        return await _entity.FirstOrDefaultAsync(expression, cancellationToken);
+    }
+
     public async Task<T> Insert(T obj, CancellationToken cancellationToken)
     {
         var result = await _entity.AddAsync(obj, cancellationToken);
+        await SaveAsync(cancellationToken);
         return result.Entity;
     }
 
@@ -37,6 +44,10 @@ public class GenericRepository<T>(DbContext dbContext) : IGenericRepository<T>
     public async ValueTask<bool> Exists(Expression<Func<T, bool>> expression, CancellationToken cancellationToken)
     {
         return await _entity.AnyAsync(expression, cancellationToken);
+    }
+    public async ValueTask<bool> IsUnique(Expression<Func<T, bool>> expression, CancellationToken cancellationToken)
+    {
+        return !await _entity.AnyAsync(expression, cancellationToken);
     }
 
     public IQueryable<T> Query(Expression<Func<T, bool>> expression, CancellationToken cancellationToken)

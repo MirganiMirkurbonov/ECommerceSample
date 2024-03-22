@@ -10,7 +10,7 @@ public static class ServiceCollectionExtension
     public static IServiceCollection AddInfrastructure(this IServiceCollection services)
     {
         services.AddScoped<IDatetimeProvider, DatetimeProvider>();
-        services.AddScoped<IJwtService, JwtService>();
+        services.AddScoped<ITokenService, TokenService>();
         return services;
     }
 }

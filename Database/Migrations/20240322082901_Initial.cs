@@ -18,6 +18,7 @@ namespace Database.Migrations
                     id = table.Column<Guid>(type: "uuid", nullable: false),
                     first_name = table.Column<string>(type: "text", nullable: false),
                     last_name = table.Column<string>(type: "text", nullable: true),
+                    username = table.Column<string>(type: "text", nullable: false),
                     phone_number = table.Column<string>(type: "text", nullable: true),
                     email = table.Column<string>(type: "text", nullable: true),
                     password_hash = table.Column<string>(type: "text", nullable: false),
@@ -35,11 +36,10 @@ namespace Database.Migrations
                 {
                     id = table.Column<Guid>(type: "uuid", nullable: false),
                     name = table.Column<string>(type: "text", nullable: false),
-                    keyword = table.Column<string>(type: "text", nullable: true),
-                    type = table.Column<string>(type: "text", nullable: false),
                     path = table.Column<string>(type: "text", nullable: false),
-                    size = table.Column<long>(type: "bigint", nullable: false),
-                    user_id = table.Column<long>(type: "bigint", nullable: false),
+                    size = table.Column<int>(type: "integer", nullable: false),
+                    description = table.Column<string>(type: "text", nullable: false),
+                    user_id = table.Column<Guid>(type: "uuid", nullable: false),
                     user = table.Column<Guid>(type: "uuid", nullable: false),
                     created_at = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
                     updated_at = table.Column<DateTime>(type: "timestamp with time zone", nullable: true)
@@ -66,15 +66,20 @@ namespace Database.Migrations
                 column: "phone_number");
 
             migrationBuilder.CreateIndex(
-                name: "IX_user_file_keyword_id",
-                table: "user_file",
-                columns: new[] { "keyword", "id" },
+                name: "IX_user_username",
+                table: "user",
+                column: "username",
                 unique: true);
 
             migrationBuilder.CreateIndex(
                 name: "IX_user_file_user",
                 table: "user_file",
                 column: "user");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_user_file_user_id_name",
+                table: "user_file",
+                columns: new[] { "user_id", "name" });
         }
 
         /// <inheritdoc />

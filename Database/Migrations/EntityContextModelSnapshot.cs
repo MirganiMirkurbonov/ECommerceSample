@@ -22,7 +22,7 @@ namespace Database.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("Database.Tables.User", b =>
+            modelBuilder.Entity("Database.Context.Tables.User", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -59,16 +59,24 @@ namespace Database.Migrations
                         .HasColumnType("timestamp with time zone")
                         .HasColumnName("updated_at");
 
+                    b.Property<string>("Username")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("username");
+
                     b.HasKey("Id");
 
                     b.HasIndex("Email");
 
                     b.HasIndex("PhoneNumber");
 
+                    b.HasIndex("Username")
+                        .IsUnique();
+
                     b.ToTable("user");
                 });
 
-            modelBuilder.Entity("Database.Tables.UserFile", b =>
+            modelBuilder.Entity("Database.Context.Tables.UserFile", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -79,9 +87,10 @@ namespace Database.Migrations
                         .HasColumnType("timestamp with time zone")
                         .HasColumnName("created_at");
 
-                    b.Property<string>("Keyword")
+                    b.Property<string>("Description")
+                        .IsRequired()
                         .HasColumnType("text")
-                        .HasColumnName("keyword");
+                        .HasColumnName("description");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -93,21 +102,16 @@ namespace Database.Migrations
                         .HasColumnType("text")
                         .HasColumnName("path");
 
-                    b.Property<long>("Size")
-                        .HasColumnType("bigint")
+                    b.Property<int>("Size")
+                        .HasColumnType("integer")
                         .HasColumnName("size");
-
-                    b.Property<string>("Type")
-                        .IsRequired()
-                        .HasColumnType("text")
-                        .HasColumnName("type");
 
                     b.Property<DateTime?>("UpdatedAt")
                         .HasColumnType("timestamp with time zone")
                         .HasColumnName("updated_at");
 
-                    b.Property<long>("UserId")
-                        .HasColumnType("bigint")
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uuid")
                         .HasColumnName("user_id");
 
                     b.Property<Guid>("user")
@@ -117,15 +121,14 @@ namespace Database.Migrations
 
                     b.HasIndex("user");
 
-                    b.HasIndex("Keyword", "Id")
-                        .IsUnique();
+                    b.HasIndex("UserId", "Name");
 
                     b.ToTable("user_file");
                 });
 
-            modelBuilder.Entity("Database.Tables.UserFile", b =>
+            modelBuilder.Entity("Database.Context.Tables.UserFile", b =>
                 {
-                    b.HasOne("Database.Tables.User", "User")
+                    b.HasOne("Database.Context.Tables.User", "User")
                         .WithMany()
                         .HasForeignKey("user")
                         .OnDelete(DeleteBehavior.Cascade)

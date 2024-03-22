@@ -6,17 +6,20 @@ namespace Database.Context.Tables;
 public class UserFile : Entity
 {
     [Column("name")]
-    public string Name { get; set; } = null!;
-    [Column("keyword")]
-    public string? Keyword { get; set; }
-    [Column("type")]
-    public string Type { get; set; } = null!;
+    public string Name { get; set; }
+    
     [Column("path")]
-    public string Path { get; set; } = null!;
+    public string Path { get; set; }
+    
     [Column("size")]
-    public long Size { get; set; }
+    public int Size { get; set; }
+    
+    [Column("description")]
+    public string Description { get; set; }
+    
     [Column("user_id")]
-    public long UserId { get; set; }
+    public Guid UserId { get; set; }
+    
     [ForeignKey("user")]
     public virtual User User { get; set; }
 }
